@@ -20,40 +20,11 @@ namespace WpfApplication2
 	/// </summary>
 	public partial class MainWindow : Window
 	{
-		private Button Button;
-		private TextBox TextBox;
-		private Grid Grid;
-		public int GridHeight;
-		public int GridWidth;
-
 		public MainWindow()
-		{
-
-			
+		{		
 			InitializeComponent();
-			AddInterface();
-
 		}
-		private void AddInterface()
-		{
-			
-			Button = new Button();
-			TextBox = new TextBox();
-			Grid = new Grid();
-			Button.Content = "Open";
-			
-
-			Grid.SetRow(Button, 0);
-			Grid.SetRow(TextBox, 1);
-			Grid.SetRow(Grid, 2);
-
-			Grid.SetColumn(Button, 0);
-			Grid.SetColumn(TextBox, 1);
-			Grid.SetColumn(Grid, 0);
-
-			
-
-		}
+		
 
 		private void btn_open_Click(object sender, RoutedEventArgs e)
 		{
